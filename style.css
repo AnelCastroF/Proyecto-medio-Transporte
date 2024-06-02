@@ -1,0 +1,258 @@
+/*
+Theme Name: Transporte Infantil
+Theme URI: http://misitio.com/transporte-infantil
+Author: Anel Castro
+Author URI: http://misitio.com
+Description: Un tema educativo para niños sobre medios de transporte.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: educativo, infantil, transporte
+Text Domain: transporte-infantil
+*/
+
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .contenedor_medio_transporte {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+  }
+  
+  /* Estilos para pantallas medianas */
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .contenedor_medio_transporte {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+  }
+  
+  /* Estilos para pantallas grandes */
+  @media screen and (min-width: 1024px) {
+    .contenedor_medio_transporte {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+  }
+  
+
+body{
+  font-family: "Itim", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  margin: 0;
+  background-image: url("images/fondo3.png");
+  background-size: 100%;
+  opacity: value;
+}
+
+header{
+    font-family: "Merienda";
+    background-color: coral;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    text-shadow: #000 2px 2px 2px;
+}
+
+nav ul{
+    font-family: "Merienda";
+    padding: 0;
+    list-style: none;
+    display: inline;
+    overflow: hidden;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline;
+    float: left;
+    margin:auto;
+    width: 50%;
+    margin-block-end: 80px;
+}
+
+nav ul li a{
+    background-color: rgb(253, 210, 70);
+    text-shadow: #000 2px 2px 2px;
+    color: #fff;
+    border: #cc8708 2px solid; 
+    text-decoration: none;
+    display: block;
+    line-height: 50px;
+    padding: 15 px;
+    margin: 0;
+    height: 50px;
+    transition: 1s;
+    font-size: 120%;
+    font-weight: bold;
+
+}
+
+nav ul li a:hover{
+    background-color: rgb(255, 169, 70);
+}
+
+
+  
+  a.active:link, a.active:visited {
+    color: rgb(255, 255, 255);
+    background-color: rgb(253, 2, 2);
+  }
+
+.contenido {
+    
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 100%;
+}
+
+.contenido img {
+    width: 100px;
+    display: flex;
+}
+
+.tipo_medio h2{
+    color: #fff;
+    text-shadow: #000 1px 1px 5px;
+}
+
+.medio_transporte img{
+     width: 150px;
+     margin-right: 30px;
+     border-radius: 50%;
+     border: teal 5px solid;
+     transition: 1s;
+}
+
+.medio_transporte img:hover{   
+    rotate: -360deg;
+}
+
+
+.medio_transporte p{
+    
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.tipo_medio div{
+    display: inline-block;
+}
+
+/* css actividades.html */
+
+.titulo h2 {
+    
+    text-align: center;
+    color: #05868f;
+    text-shadow: #e2e0e0 2px 2px 2px;   
+    font-size: 2.4em;
+}
+.titulo h3 {
+    
+    text-align: center;
+    color: #94248e;
+    text-shadow: #bdbcbc 2px 2px 2px;
+    font-size: 1.7em;
+}
+.contenido_1{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 70%;
+
+}
+
+.contenedor_medio_transporte {
+    background-color: rgb(198, 248, 140);
+    margin: 60px;
+    padding: 20px;
+    border-radius: 10px;
+    border: #449104 solid 4px;
+    box-shadow: #000 2px 2px 10px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.contenedor_medio_transporte #div{
+    padding: 0 5px;
+    
+    
+}
+
+.contenedor_medio_transporte img {
+    width: 160px;
+    border: #f01717 3px solid ;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.contenedor_sombras {
+    background-color: rgb(77, 173, 230);
+    border: 2px solid #0a3f77;
+    
+    
+}
+.contenedor_sombras img{ 
+    border: 4px dashed #4024dd;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding: 40em 0em;
+    
+    
+}
+
+.modal-content {
+    background-color: #faeb99;
+    margin: auto;
+    padding: 30px 50px;
+    border: 1px solid #888;
+    width: 400px;
+    text-align: center;
+    border-radius: 10px;
+    color: #ca15a3;
+    font-weight: bold;
+}
+
+.modal-content p{
+    
+    font-size: 30px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    
+}

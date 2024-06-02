@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freeman&family=Itim&family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>MEDIOS DE TRANSPORTE</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">SONIDOS</a></li>
+            <li><a href="actividades.html">ACTIVIDADES</a></li>
+        </ul>
+    </nav>
+    <section class="contenido">
+        <div id="terrestres" class="tipo_medio">
+            <h2>TERRESTRES</h2>
+            <div>
+                <div class="medio_transporte">
+                    <img src="images/transporte/1.jpg" alt="" onclick="sonido('tren')">
+                    <p>Tren</p>
+                </div>
+                <div class="medio_transporte">
+                    <img src="images/transporte/4.jpg" alt="" onclick="sonido('bicicleta')">
+                    <p>Bicicleta</p>
+                </div>
+                <div class="medio_transporte">
+                    <img src="images/transporte/5.jpg" alt="" onclick="sonido('camion')">
+                    <p>Camion</p>
+                </div>
+                <div class="medio_transporte">
+                    <img src="images/transporte/6.jpg" alt="" onclick="sonido('carro')">
+                    <p>Carro</p>
+                </div>
+                <div class="medio_transporte">
+                    <img src="images/transporte/7.jpg" alt="" onclick="sonido('moto')">
+                    <p>Moto</p>
+                </div>
+                <div class="medio_transporte">
+                    <img src="images/transporte/10.jpg" alt="">
+                    <p>Autobus</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="aereos" class="tipo_medio">
+            <h2>AEREOS</h2>
+            <div>
+                <div class="medio_transporte">
+                    <img src="images/transporte/2.jpg" alt="" onclick="sonido('avion')">
+                    <p>Avión</p>
+                </div>
+                <div class="medio_transporte">
+                    <img src="images/transporte/8.png" alt="" onclick="sonido('helicoptero')">
+                    <p>Helicoptero</p>
+                </div>  
+            </div>
+        </div>
+
+        <div id="acuaticos" class="tipo_medio" >
+            <h2>ACUATICOS</h2>
+            <div>
+                <div class="medio_transporte">
+                    <img src="images/transporte/3.jpg" alt="" onclick="sonido('barco')">
+                    <p>Barco</p>
+                </div>
+                <div class="medio_transporte">
+                    <img src="images/transporte/9.png" alt="" onclick="sonido('bote')">
+                    <p>Bote</p>
+                </div>
+                
+            </div>
+        </div>
+
+        <audio src="audio" type="audio/mpeg" id="reproductor_audio"> 
+        </audio>
+
+    </section>
+    
+</body>
+</html>

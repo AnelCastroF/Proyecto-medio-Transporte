@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freeman&family=Itim&family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+
+    <script src="script.js"></script>
+    <title>Actividades</title>
+    
+</head>
+<body>
+    <header>
+        <h1>MEDIOS DE TRANSPORTE</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">SONIDOS</a></li>
+            <li><a href="actividades.html" class="active">ACTIVIDADES</a></li>
+        </ul>
+    </nav>
+    <div class="titulo">
+        <h2>ACTIVIDAD 1</h2>
+        <h3>Relaciona las imágenes</h3>
+    </div>
+    <section class="contenido_1">
+        <div class="contenedor_medio_transporte" >
+            
+            <div><img id="drag1" draggable="true" src="images/Transporte/1.jpg"  ondragstart="drag(event)" alt="tren"></div>
+            <div><img id="drag2" draggable="true" src="images/Transporte/4.jpg" ondragstart="drag(event)" alt="bicicleta"></div>
+            <div><img id="drag3" draggable="true" src="images/Transporte/6.jpg" ondragstart="drag(event)" alt="carro"></div>
+            <div><img id="drag4" draggable="true" src="images/Transporte/5.jpg" ondragstart="drag(event)" alt="camion"></div>
+            <div><img id="drag5" draggable="true" src="images/Transporte/2.jpg" ondragstart="drag(event)" alt="avion"></div>
+            <div><img id="drag6" draggable="true" src="images/Transporte/3.jpg" ondragstart="drag(event)" alt="barco"></div>
+        </div>
+
+        <div class="contenedor_medio_transporte contenedor_sombras">
+            <div class="sombras"  id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="sombra1"  src="images/Transporte-sombras/4.jpg" alt="bicicleta"></div>  
+            <div class="sombras"  id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="sombra2" src="images/Transporte-sombras/3.jpg" alt="barco"></div>
+            <div class="sombras"  id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="sombra3" src="images/Transporte-sombras/5.jpg" alt="camion"></div>
+            <div class="sombras"  id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="sombra4"  src="images/Transporte-sombras/6.jpg" alt="carro"></div>  
+            <div class="sombras"  id="div5" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="sombra5" src="images/Transporte-sombras/1.jpg" alt="tren"></div>
+            <div class="sombras"  id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="sombra6" src="images/Transporte-sombras/2.jpg" alt="avion"></div>
+        </div>
+</section>    
+
+<div id="Modal" class="modal">
+  <div class="modal-content ">
+      <span class="close">&times;</span>
+      <p>Felicidades, has ganado!</p>
+      <audio id="aplausos" src="audio/feliz.mp3"></audio>
+      <img id="aplausos" src="images/tenor.gif" alt="">
+      
+  </div>
+</div>
+
+    <!-- <div id="modal" class="modal">
+        
+            <div class="modal-content ">
+                <h5 class="modal-title">Muy bien</h5>
+                <button  type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div>
+                <h2>Felicidades, has ganado!</h2>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+           <audio autoplay><source src="audio" type="audio/mpeg"></audio> 
+        
+    </div> -->
+
+    <!-- <div  id="modal" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Muy bien</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Felicidades, has ganado!</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+
+    
+    
+</body>
+</html>
+
